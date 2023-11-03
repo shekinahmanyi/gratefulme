@@ -10,6 +10,8 @@ const Navbar = () => {
       <div>Home</div>
       <div>About</div>
       <div>Contact</div>
+      <div>Contact</div>
+      <div>Contact</div>
     </container>
   )
 }
