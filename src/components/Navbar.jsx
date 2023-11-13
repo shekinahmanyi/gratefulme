@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaGithub, FaMoon, FaSun, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -12,22 +13,42 @@ const Navbar = () => {
     <nav
       className={`navbar ${
         isDarkMode ? "dark:bg-slate-900 text-white" : "bg-white "
-      } fixed top-0 inset-x-0 z-40 shadow-lg`}
+      } fixed top-0 inset-x-0 z-40 shadow-lg dark:border-b-slate-700`}
     >
       <div className="container mx-auto px-6 flex items-center font-nunito justify-between">
         <div className="px-5 text-2xl mb-5 mt-5 font-bold">
           <span className="">
-            GrateFul<span className="">Me</span>
+            grateful<span className="">me</span>
           </span>
         </div>
 
-        <div className="font-bold hidden md:flex md:items-center md:space-x-4 mr-52">
-          <Link to="/">Home</Link>
-        </div>
-
         <div className="flex items-center space-x-4">
+          <a
+            href="https://github.com/shekinahmanyi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full p-2"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://twitter.com/ShekinahManyi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full p-2"
+          >
+            <FaTwitter />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shekinah-manyi-849a21210/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full p-2"
+          >
+            <FaLinkedin />
+          </a>
           <button onClick={toggleTheme}>
-            {isDarkMode ? "Light Mode" : "Dark Mode"}
+            {isDarkMode ? <FaSun /> : <FaMoon />}
           </button>
         </div>
       </div>
