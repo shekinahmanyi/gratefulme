@@ -18,7 +18,7 @@ function App() {
       <Router>
         <Navbar isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
         <Routes>
-          <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
+          <Route path="/" element={<Home isDarkMode={isDarkMode} toggleTheme={toggleTheme} />} />
         </Routes>
         <Footer />
       </Router>
