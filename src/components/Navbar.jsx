@@ -2,7 +2,6 @@ import React, { useState } from "react";
 //import { Link } from "react-router-dom";
 import { FaGithub, FaMoon, FaSun, FaTwitter, FaLinkedin } from "react-icons/fa";
 
-
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -11,24 +10,24 @@ const Navbar = () => {
   };
 
   return (
-    <container
+    <nav
       className={`navbar ${
-        isDarkMode ? "dark:bg-slate-900 text-white" : "bg-white "
-      } fixed top-0 inset-x-0 z-40 shadow-lg dark:border-b-slate-700`}
+        isDarkMode
+          ? "dark:bg-slate-900 text-white border-b-slate-200"
+          : "bg-white dark:border-b-slate-700 "
+      } fixed top-0 inset-x-0 z-40 shadow-lg `}
     >
-      <nav className="container mx-auto px-6 flex items-center font-nunito justify-between">
+      <div className="container mx-auto px-6 flex items-center font-nunito justify-between">
         <div className="px-5 text-2xl mb-5 mt-5 font-bold">
-          <span className="">
-            gratefulme
-          </span>
+          <span className="">gratefulme</span>
         </div>
 
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 ">
           <a
             href="https://github.com/shekinahmanyi"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full p-2"
+            className="rounded-full text-xl"
           >
             <FaGithub />
           </a>
@@ -36,7 +35,7 @@ const Navbar = () => {
             href="https://twitter.com/ShekinahManyi"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full p-2"
+            className="rounded-full text-lg"
           >
             <FaTwitter />
           </a>
@@ -44,7 +43,7 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/shekinah-manyi-849a21210/"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full p-2"
+            className="rounded-full text-lg"
           >
             <FaLinkedin />
           </a>
@@ -52,9 +51,8 @@ const Navbar = () => {
             {isDarkMode ? <FaSun /> : <FaMoon />}
           </button>
         </div>
-      </nav>
-   
-    </container>
+      </div>
+    </nav>
   );
 };
 
