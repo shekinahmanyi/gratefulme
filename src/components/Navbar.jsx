@@ -13,13 +13,13 @@ const Navbar = () => {
     <nav
       className={`navbar ${
         isDarkMode
-          ? "dark:bg-slate-900 text-white border-b-slate-200"
-          : "bg-white dark:border-b-slate-700 "
-      } fixed top-0 inset-x-0 z-40 shadow-lg `}
+          ? "dark:bg-slate-900 text-white border-b-slate-700"
+          : "bg-white border-b-200 "
+      } sticky top-0 inset-x-0 z-40 border-b font-custom`}
     >
       <div className="container mx-auto px-6 flex items-center font-nunito justify-between">
-        <div className="px-5 text-2xl mb-5 mt-5 font-bold">
-          <span className="">gratefulme</span>
+        <div className="px-5 text-xl mb-5 mt-5 font-bold">
+          <span className="">gratefulme </span>
         </div>
 
         <div className="flex items-center space-x-4 ">
