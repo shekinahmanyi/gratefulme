@@ -1,17 +1,13 @@
 import React from "react";
 
-const Home = ({ isDarkMode }) => {
-  console.log("isDarkMode in Home:", isDarkMode);
+const Home = () => {
+
 
   return (
     <div
-      className={`home-container ${
-        isDarkMode
-          ? "dark:bg-slate-900 text-white "
-          : "bg-custom-blue text-black"
-      } text-center font-custom pt-24 h-screen`}
+      className="text-center font-custom pt-24 h-screen bg-custom-blue dark:bg-slate-900"
     >
-      <h1 className="text-5xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-5xl lg:text-6xl">
+      <h1 className="text-5xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-5xl lg:text-6xl dark:text-white">
         Stay grateful in <br />
         your future endeavors
       </h1>
@@ -23,10 +19,10 @@ const Home = ({ isDarkMode }) => {
         when you feel tired and overwhelmed and
         <br /> be grateful to God for how far you've come.
       </p>
-      <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 bg-black text-white text-base font-medium px-4 py-2 rounded-md mt-12">
+      <button className="hover:scale-110 text-white bg-black  dark:bg-white dark:text-black text-base font-medium px-4 py-2 rounded-md mt-12 ">
         Record a Message
       </button>
-      <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 bg-white text-base font-medium px-4 py-2 rounded-md mt-12 ml-6">
+      <button className="hover:-translate-y-1 hover:scale-110 text-black bg-white dark:bg-slate-600 dark:text-white text-base font-medium px-4 py-2 rounded-md mt-12 ml-6">
         Learn How it's built
       </button>
     </div>
