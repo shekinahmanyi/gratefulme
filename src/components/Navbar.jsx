@@ -15,7 +15,7 @@ const Navbar = () => {
         isDarkMode
           ? "dark:bg-slate-900 text-white border-b-slate-700"
           : "bg-white border-b-200 "
-      } sticky top-0 inset-x-0 z-40 border-b font-custom`}
+      } sticky top-0 inset-x-0 z-40 border-b font-custom `}
     >
       <div className="container mx-auto px-6 flex items-center font-nunito justify-between">
         <div className="px-5 text-xl mb-5 mt-5 font-bold">
