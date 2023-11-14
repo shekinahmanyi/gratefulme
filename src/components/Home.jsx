@@ -5,7 +5,7 @@ const Home = () => {
 
   return (
     <div
-      className="text-center font-custom pt-24 h-screen bg-custom-blue dark:bg-slate-900"
+      className="text-center font-custom pt-24 h-screen bg-custom-blue  dark:bg-slate-900"
     >
       <h1 className="text-5xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-5xl lg:text-6xl dark:text-white">
         Stay grateful in <br />
