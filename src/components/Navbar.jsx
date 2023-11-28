@@ -23,7 +23,8 @@ const Navbar = () => {
             className="rounded-full text-xl"
           >
             <FaGithub />
-          </a>
+          </a> 
+    
           <a
             href="https://twitter.com/ShekinahManyi"
             target="_blank"
