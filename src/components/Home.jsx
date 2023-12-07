@@ -5,7 +5,7 @@ const Home = () => {
 
 
   return (
-    <div className=" font-custom pt-24 w-full h-screen bg-custom-blue text-center dark:bg-slate-900">
+    <div className=" font-custom pt-24 h-screen bg-custom-blue text-center dark:bg-slate-900">
       <h1 className="text-5xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-5xl lg:text-6xl dark:text-white text-center">
         Stay grateful in <br />
         your future endeavors
@@ -26,8 +26,10 @@ const Home = () => {
           Learn How it's built
         </button>
       </div>
-
-      <ImageGallery  />
+      <div  className="mt-24" >
+      <ImageGallery />
+      </div>
+   
     </div>
   );
 };
