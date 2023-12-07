@@ -1,9 +1,11 @@
 import React from "react";
-import sheki from "../images/sheki.jpeg";
+import ImageGallery from "./ImageGallery";
 
 const Home = () => {
+
+
   return (
-    <div className=" font-custom pt-24 h-screen bg-custom-blue text-center dark:bg-slate-900">
+    <div className=" font-custom pt-24 w-full h-screen bg-custom-blue text-center dark:bg-slate-900">
       <h1 className="text-5xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-5xl lg:text-6xl dark:text-white text-center">
         Stay grateful in <br />
         your future endeavors
@@ -25,32 +27,7 @@ const Home = () => {
         </button>
       </div>
 
-      {/* Slanted Cards  **/}
-      <div className="flex w-80 h-90 mt-16 ml-24 mx-auto my-auto text-center">
-        <img
-          src={sheki}
-          alt="shekinah"
-          className=" rounded-lg object-cover w-full h-full scale-125 origin-top-left mr-32 "
-        />
-        <img
-          src={sheki}
-          alt="shekinah"
-          className=" rounded-lg object-cover w-full h-full scale-125 origin-top-left mr-32 "
-        />
-        <img
-          src={sheki}
-          alt="shekinah"
-          className=" rounded-lg object-cover w-full h-full scale-125 origin-top-left mr-32 "
-        />
-
-        <img
-          src={sheki}
-          alt="shekinah"
-          className=" rounded-lg object-cover w-full h-full scale-125 origin-top-left  "
-        />
-      </div>
-
-      
+      <ImageGallery  />
     </div>
   );
 };
