@@ -1,14 +1,9 @@
 import React from "react";
-import sheki from '../images/sheki.jpeg'
-
+import sheki from "../images/sheki.jpeg";
 
 const Home = () => {
-
-
   return (
-    <div
-      className=" font-custom pt-24 h-screen bg-custom-blue text-center dark:bg-slate-900"
-    >
+    <div className=" font-custom pt-24 h-screen bg-custom-blue text-center dark:bg-slate-900">
       <h1 className="text-5xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-5xl lg:text-6xl dark:text-white text-center">
         Stay grateful in <br />
         your future endeavors
@@ -22,35 +17,40 @@ const Home = () => {
         <br /> be grateful to God for how far you've come.
       </p>
       <div className=" text-center">
-      <button className="hover:scale-110 text-white bg-black  dark:bg-white dark:text-black text-base font-medium px-4 py-2 rounded-md mt-12">
-        Record a Message
-      </button>
-      <button className="hover:-translate-y-1 hover:scale-110 text-black bg-white dark:bg-slate-600 dark:text-white text-base font-medium px-4 py-2 rounded-md mt-12 ml-6">
-        Learn How it's built
-      </button>
+        <button className="hover:scale-110 text-white bg-black  dark:bg-white dark:text-black text-base font-medium px-4 py-2 rounded-md mt-12">
+          Record a Message
+        </button>
+        <button className="hover:-translate-y-1 hover:scale-110 text-black bg-white dark:bg-slate-600 dark:text-white text-base font-medium px-4 py-2 rounded-md mt-12 ml-6">
+          Learn How it's built
+        </button>
       </div>
-      
 
-      {/* Slanted Cards */}
-      <div className="flex w-60 h-70 mt-16 ml-52 mx-auto my-auto text-center">     
-      <img
-            src={sheki}
-            alt="shekinah"
-            className=" rounded-lg object-cover w-full h-full scale-125 origin-top-left rotate-1 mr-24 "
-          />
-         <img
-            src={sheki}
-            alt="shekinah"
-            className=" rounded-lg object-cover w-full h-full scale-125 origin-top-left -rotate-2 mr-24 "
-          />
-         <img
-            src={sheki}
-            alt="shekinah"
-            className=" rounded-lg object-cover w-full h-full scale-125 origin-top-left -rotate-3 "
-          />
-      
-         
+      {/* Slanted Cards  **/}
+      <div className="flex w-80 h-90 mt-16 ml-24 mx-auto my-auto text-center">
+        <img
+          src={sheki}
+          alt="shekinah"
+          className=" rounded-lg object-cover w-full h-full scale-125 origin-top-left mr-32 "
+        />
+        <img
+          src={sheki}
+          alt="shekinah"
+          className=" rounded-lg object-cover w-full h-full scale-125 origin-top-left mr-32 "
+        />
+        <img
+          src={sheki}
+          alt="shekinah"
+          className=" rounded-lg object-cover w-full h-full scale-125 origin-top-left mr-32 "
+        />
+
+        <img
+          src={sheki}
+          alt="shekinah"
+          className=" rounded-lg object-cover w-full h-full scale-125 origin-top-left  "
+        />
       </div>
+
+      
     </div>
   );
 };
