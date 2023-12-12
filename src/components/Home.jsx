@@ -1,5 +1,6 @@
 import React from "react";
 import ImageGallery from "./ImageGallery";
+import Footer from "./Footer";
 
 const Home = () => {
 
@@ -28,8 +29,8 @@ const Home = () => {
       </div>
       <div  className="mt-24" >
       <ImageGallery />
+      <Footer/>
       </div>
-   
     </div>
   );
 };
