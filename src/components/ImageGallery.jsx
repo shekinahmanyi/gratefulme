@@ -59,9 +59,9 @@ const ImageGallery = () => {
           <h1 className="uppercase dark:text-white z-1 md:mt-[20vh] md:pl-[10vw] text-center md:text-left text-2xl md:text-3xl"> A One Year of Reflection</h1>
         </motion.div>
 
-        <motion.div className="h-[50vh] bg-custom-blue dark:bg-slate-900"></motion.div>
+        <motion.div className="h-[100vh] bg-custom-blue dark:bg-slate-900"></motion.div>
         <motion.div
-          className="h-[175vh] p-5 [&>*:nth-of-type(1)]:-top-[65%] [&>*:nth-of-type(2)]:-top-[95%] [&>*:nth-of-type(3)]:-top-[45%] [&>*:nth-of-type(4)]:-top-[85%] overflow-hidden flex flex-row gap-[2vw] box-border  bg-custom-blue dark:bg-slate-900 "
+          className="h-[175vh] p-5 [&>*:nth-of-type(1)]:-top-[60%] [&>*:nth-of-type(2)]:-top-[95%] [&>*:nth-of-type(3)]:-top-[45%] [&>*:nth-of-type(4)]:-top-[95%] overflow-hidden flex flex-row gap-[2vw] box-border  bg-custom-blue dark:bg-slate-900 "
           ref={gallery}
         >
         
