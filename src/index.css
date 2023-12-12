@@ -10,13 +10,13 @@
 /* Track */
 ::-webkit-scrollbar-track {
   background: #FFFFFF;
-  border-radius: 5px;
+  border-radius: 35px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background:#243B53; ;
-  border-radius: 25px;
+  border-radius: 35px;
 }
 
 /* Handle on hover */
