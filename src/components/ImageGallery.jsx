@@ -15,7 +15,7 @@ import h10 from '../images/h10.jpeg';
 import h11 from '../images/h11.jpeg';
 
 
-const ImageGallery = () => {
+const ImageGallery = () => { 
  
   const gallery = useRef(null);
   const [dimension, setDimension] = useState({width:0, height:0});
