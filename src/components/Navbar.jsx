@@ -1,15 +1,11 @@
 import React from "react";
 //import { Link } from "react-router-dom";
-import { FaGithub,FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 import Switcher from "./Switcher";
 
 const Navbar = () => {
-  
-
   return (
-    <nav
-      className="sticky top-0 inset-x-0 z-40 border-b font-custom dark:text-white dark:border-b-slate-700 bg-white dark:bg-slate-900" 
-    >
+    <nav className="sticky top-0 inset-x-0 z-40 border-b font-custom dark:text-white dark:border-b-slate-700 bg-white dark:bg-slate-900">
       <div className="container mx-auto px-6 flex items-center font-nunito justify-between">
         <div className="px-5 text-xl mb-5 mt-5 font-bold">
           <span className="">gratefulme </span>
@@ -23,8 +19,8 @@ const Navbar = () => {
             className="rounded-full text-xl"
           >
             <FaGithub />
-          </a> 
-    
+          </a>
+
           <a
             href="https://twitter.com/ShekinahManyi"
             target="_blank"
@@ -41,10 +37,10 @@ const Navbar = () => {
           >
             <FaLinkedin />
           </a>
-          <Switcher/>
-        {/**<button onClick={toggleTheme}>
+          <Switcher />
+          {/**<button onClick={toggleTheme}>
             {isDarkMode ? <FaSun /> : <FaMoon />}
-          </button> */}  
+          </button> */}
         </div>
       </div>
     </nav>
