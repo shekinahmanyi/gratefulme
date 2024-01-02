@@ -3,8 +3,6 @@ import ImageGallery from "./ImageGallery";
 import Footer from "./Footer";
 
 const Home = () => {
-
-
   return (
     <div className=" font-custom pt-24 h-screen bg-custom-blue text-center dark:bg-slate-900">
       <h1 className="text-5xl font-extrabold leading-tight tracking-tighter sm:text-5xl md:text-5xl lg:text-6xl dark:text-white text-center">
@@ -27,9 +25,9 @@ const Home = () => {
           Learn How it's built
         </button>
       </div>
-      <div  className="mt-24" >
-      <ImageGallery />
-      <Footer/>
+      <div className="mt-24">
+        <ImageGallery />
+        <Footer />
       </div>
     </div>
   );
