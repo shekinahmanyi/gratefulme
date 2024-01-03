@@ -9,21 +9,21 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 30px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:#243B53; ;
+  background: #243b53;
   border-radius: 30px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #243B53;
+  background: #243b53;
 }
 
-body{
-  margin:0
+body {
+  margin: 0;
 }
