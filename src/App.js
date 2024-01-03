@@ -5,20 +5,14 @@ import store from "./app/store";
 import { Provider } from "react-redux";
 import Home from "./components/Home";
 
-
-
 function App() {
-  
-
   return (
     <Provider store={store}>
       <Router>
-       
-        <Navbar  />
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Home  />} />
+          <Route path="/" element={<Home />} />
         </Routes>
-      
       </Router>
     </Provider>
   );
