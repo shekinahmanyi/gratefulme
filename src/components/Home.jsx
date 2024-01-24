@@ -21,9 +21,9 @@ const Home = () => {
         <button className="hover:scale-110 text-white bg-black  dark:bg-white dark:text-black text-base font-medium px-4 py-2 rounded-md mt-12">
           Record a Message
         </button>
-        <button className="hover:-translate-y-1 hover:scale-110 text-black bg-white dark:bg-slate-600 dark:text-white text-base font-medium px-4 py-2 rounded-md mt-12 ml-6">
+        <a href="https://github.com/shekinahmanyi/gratefulme" className="hover:-translate-y-1 hover:scale-110 text-black bg-white dark:bg-slate-600 dark:text-white text-base font-medium px-4 py-2 rounded-md mt-12 ml-6">
           Learn How it's built
-        </button>
+        </a>
       </div>
       <div className="mt-24">
         <ImageGallery />
